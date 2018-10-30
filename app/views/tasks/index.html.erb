@@ -6,9 +6,10 @@
   <input type="checkbox">
   <p><%= link_to "Details of task", task_path(task.id) %></p>
   <p><%= link_to "Edit a task", edit_path(task.id) %></p>
+  <p><%= link_to "Destroy the task", destroy_path(task), method: :delete %></p>
 <% end %>
-  <p><%= link_to "Add a new task", new_path %></p>
-  <p><%= link_to "Destroy a task", destroy_path(:id) %></p>
+ <p><%= link_to "Add a new task", new_path %></p>
+
 
 
 
